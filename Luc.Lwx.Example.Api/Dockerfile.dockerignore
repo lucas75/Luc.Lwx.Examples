@@ -1,0 +1,8 @@
+# standard dotnet output dirs
+**/bin
+**/obj
+**/out 
+**/TestResults
+
+# the dockefile itself
+Dockerfile*

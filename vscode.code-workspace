@@ -19,7 +19,7 @@
 		]
 	},
 	"settings": {
-		"dotnet.defaultSolution": "Luc.Util",		
+		"dotnet.defaultSolution": "Luc.Lwx.Example.Api.sln",		
 		"dotnet.codeLens.enableReferencesCodeLens": false,
 		"dotnet.navigation.navigateToDecompiledSources": true,
 		"dotnet.projects.enableAutomaticRestore": true,
@@ -30,6 +30,7 @@
 		"testing.coverageToolbarEnabled": true,		
 		"dotnet.testWindow.useTestingPlatformProtocol": false,
 		"testing.gutterEnabled": true,
+		"terminal.integrated.scrollback": 50000,
 		"workbench.editorAssociations": 
         {
             "*.md": "vscode.markdown.preview.editor"
