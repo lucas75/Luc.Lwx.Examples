@@ -5,6 +5,9 @@
 		},
 		{
 			"path": "../Luc.Lwx"
+		},
+		{
+			"path": "../nuget-local"
 		}
 	],
 	"extensions": {
