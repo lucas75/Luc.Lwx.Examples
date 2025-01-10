@@ -44,7 +44,7 @@
 
   <ItemGroup>
     <AdditionalFiles Include="appsettings.json" />
-    <PackageReference Include="Luc.Lwx.Generator" Version="[1.0.0-rc.4]" OutputItemType="Analyzer" ReferenceOutputAssembly="false"/>
+    <PackageReference Include="Luc.Lwx.Generator" Version="[1.0.0-rc.5]" OutputItemType="Analyzer" ReferenceOutputAssembly="false"/>
   </ItemGroup>
 
   <ItemGroup>
