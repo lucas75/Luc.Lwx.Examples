@@ -21,8 +21,8 @@
 			"ms-azuretools.vscode-docker"
 		]
 	},
-	"settings": {
-		"dotnet.defaultSolution": "Luc.Lwx.Example.Api.sln",		
+	"settings": 
+	{
 		"dotnet.codeLens.enableReferencesCodeLens": false,
 		"dotnet.navigation.navigateToDecompiledSources": true,
 		"dotnet.projects.enableAutomaticRestore": true,
@@ -37,6 +37,6 @@
 		"workbench.editorAssociations": 
         {
             "*.md": "vscode.markdown.preview.editor"
-        },
+        }		
 	}
 }
