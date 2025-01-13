@@ -44,14 +44,24 @@
 
   <ItemGroup>
     <AdditionalFiles Include="appsettings.json" />
-    <PackageReference Include="Luc.Lwx.Generator" Version="[1.0.0-rc.5]" OutputItemType="Analyzer" ReferenceOutputAssembly="false"/>
+    <ProjectReference Include="..\..\Luc.Lwx\Luc.Lwx.Generator\Luc.Lwx.Generator.csproj" OutputItemType="Analyzer" ReferenceOutputAssembly="false" />
+    <!-- para pegar do nuget:
+      <PackageReference Include="Luc.Lwx.Generator" Version="[1.0.0,2.0.0)" OutputItemType="Analyzer" ReferenceOutputAssembly="false"/>
+    -->
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Luc.Lwx" Version="[1.0.0,)" />    
+    <ProjectReference Include="..\..\Luc.Lwx\Luc.Lwx\Luc.Lwx.csproj"/>
+    <!-- para pegar do nuget
+      <PackageReference Include="Luc.Lwx" Version="[1.0.0,2.0.0)" />     
+    -->
     <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.11" />
     <PackageReference Include="Microsoft.AspNetCore.Authentication.Certificate" Version="8.0.11" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="7.1.0" />        
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Web/Static/" />
   </ItemGroup>    
   
   
