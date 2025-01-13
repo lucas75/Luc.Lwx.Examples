@@ -1,11 +1,10 @@
-using System.Diagnostics.CodeAnalysis;
-using System.Text.Json.Serialization;
-using Luc.Lwx.Example.Api.LwxAuthPolicies;
+using Luc.Lwx.Example.Api.Web.AuthPolicies;
+using Luc.Lwx.Example.Api.Web.Model;
 using Luc.Lwx.Interface;
 using Luc.Lwx.LwxActivityLog;
 using Microsoft.AspNetCore.Mvc;
 
-namespace Luc.Lwx.Example.Api.LwxEndpoints.ExampleParamInPath.ParamId;
+namespace Luc.Lwx.Example.Api.Web.Endpoints.ExampleParamInPath.ParamId;
 
 public static partial class EndpointStart
 { 
@@ -23,28 +22,16 @@ public static partial class EndpointStart
       Step = LwxActionStep.Finish,
       ShortDescription = "Start the example process"
     )]
-    public async static Task<ResponseDto> Execute
+    public async static Task<ExampelParamInPathStartResponseDto> Execute
     ( 
       HttpContext ctx,
       [FromRoute(Name="id")] int id,
-      [FromBody] RequestDto request
+      [FromBody] ExampleParamInPathStartRequestDto request
     ) 
     {
       // Process the request here
-      return new ResponseDto { Ok = true };
+      return new ExampelParamInPathStartResponseDto { Ok = true };
     }
 
-    [DynamicallyAccessedMembers(DynamicallyAccessedMemberTypes.PublicProperties)]
-    public class RequestDto
-    {
-      [JsonPropertyName("ok")] [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
-      public bool Ok { get; set; }
-    }
-
-    [DynamicallyAccessedMembers(DynamicallyAccessedMemberTypes.PublicProperties)]
-    public class ResponseDto
-    {
-        [JsonPropertyName("ok")] [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
-        public bool Ok { get; set; }
-    }
+  
 }

@@ -4,7 +4,7 @@ using Luc.Lwx.Interface;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.IdentityModel.Tokens;
 
-namespace Luc.Lwx.Example.Api.LwxAuthSchemes;
+namespace Luc.Lwx.Example.Api.Web.AuthSchemes;
 
 
 public static partial class AuthSchemeExample001
