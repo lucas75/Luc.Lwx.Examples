@@ -17,10 +17,7 @@
     <PublishReadyToRunEmitSymbols>true</PublishReadyToRunEmitSymbols>
     <PublishReadyToRunComposite>true</PublishReadyToRunComposite>    
 
-    <!-- Plataform and optimizations -->
-    <!--
-    <RuntimeIdentifier>linux-x64</RuntimeIdentifier> 
-    -->
+    <!-- Plataform and optimizations -->    
     <OptimizationPreference>size</OptimizationPreference>
     
     <!--
