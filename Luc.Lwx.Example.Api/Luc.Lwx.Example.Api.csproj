@@ -49,6 +49,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\Luc.Lwx\Luc.Lwx\Luc.Lwx.csproj"/>
+    <ProjectReference Include="..\..\Luc.Lwx\Luc.Lwx.Azure\Luc.Lwx.Azure.csproj"/>
     <!-- para pegar do nuget
       <PackageReference Include="Luc.Lwx" Version="[1.0.0,2.0.0)" />     
     -->
