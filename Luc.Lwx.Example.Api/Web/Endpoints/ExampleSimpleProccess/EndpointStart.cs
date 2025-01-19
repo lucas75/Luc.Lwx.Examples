@@ -1,5 +1,4 @@
 using Luc.Lwx.Example.Api.Web.AuthPolicies;
-using Luc.Lwx.Example.Api.Web.M;
 using Luc.Lwx.Example.Api.Web.Model;
 using Luc.Lwx.Interface;
 using Luc.Lwx.LwxActivityLog;
